@@ -1,0 +1,48 @@
+.producto {
+  position: relative;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.producto:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.6rem 1.4rem rgba(18, 40, 76, 0.12) !important;
+}
+
+.favorito {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 1;
+  color: #6c757d;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.favorito:hover {
+  color: var(--bs-danger);
+}
+
+.imagen {
+  aspect-ratio: 4 / 3;
+  background: #f3f6fb;
+  border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.75rem;
+}
+
+.descripcion {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

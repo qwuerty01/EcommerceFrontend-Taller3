@@ -1,0 +1,11 @@
+.banner {
+  background: linear-gradient(110deg, #eaf2ff 0%, #dbe8fd 60%, #c8dcfb 100%);
+}
+
+.banner h1 {
+  color: #12284c;
+}
+
+.banner img {
+  max-height: 260px;
+}

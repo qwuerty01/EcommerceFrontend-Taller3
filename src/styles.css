@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+body {
+  background: #f7f9fc;
+}
+
+.fondo-auth {
+  min-height: 100vh;
+  background: #eef3fb;
+}
+
+.tarjeta-auth {
+  width: 100%;
+  max-width: 960px;
+  border-radius: 1rem;
+}
+
+.marca-auth {
+  background: linear-gradient(160deg, #f4f8ff 0%, #e3edfd 100%);
+}
+
+.logo-auth {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #12284c;
+}
+
+.ilustracion-auth {
+  width: 100%;
+  max-width: 260px;
+}
+
+.titulo-auth {
+  color: #12284c;
+}

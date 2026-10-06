@@ -1,0 +1,39 @@
+<app-navbar />
+
+<main class="container py-4">
+  <section class="banner rounded-4 p-4 p-md-5 mb-5">
+    <div class="row align-items-center g-4">
+      <div class="col-md-7">
+        <h1 class="display-5 fw-bold mb-3">Todo lo que necesitas,<br />en un solo lugar</h1>
+        <p class="text-secondary mb-4">Descubre los mejores productos con la mejor calidad y precio.</p>
+        <a href="#productos" class="btn btn-primary btn-lg px-4">Ver productos</a>
+      </div>
+      <div class="col-md-5 d-none d-md-block text-center">
+        <img src="banner.jpg" alt="Laptop" class="img-fluid rounded-4" />
+      </div>
+    </div>
+  </section>
+
+  <section id="productos">
+    <div class="d-flex justify-content-between align-items-baseline mb-3">
+      <h2 class="h4 fw-bold mb-0">Productos destacados</h2>
+      <span class="text-muted small">{{ productos().length }} {{ productos().length === 1 ? 'producto' : 'productos' }}</span>
+    </div>
+
+    @if (error()) {
+      <div class="alert alert-danger">{{ error() }}</div>
+    }
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-3">
+      @for (producto of productos(); track producto.id) {
+        <div class="col">
+          <app-product-card [producto]="producto" />
+        </div>
+      } @empty {
+        @if (!error()) {
+          <p class="text-muted">Todavía no hay productos en la tienda.</p>
+        }
+      }
+    </div>
+  </section>
+</main>

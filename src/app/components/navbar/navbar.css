@@ -1,0 +1,13 @@
+.navbar-brand {
+  font-size: 1.4rem;
+  color: #12284c;
+}
+
+.nav-link.active {
+  color: var(--bs-primary) !important;
+  font-weight: 600;
+}
+
+.buscador {
+  max-width: 420px;
+}

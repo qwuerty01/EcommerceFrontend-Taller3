@@ -1,0 +1,6 @@
+# TALLER 3 – FRONTEND E-COMMERCE
+
+**Valentina Garcia Pinzon**
+ID: 000613369
+
+UPB - TEC LAB
